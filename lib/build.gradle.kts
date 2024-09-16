@@ -22,6 +22,9 @@ dependencies {
   testImplementation(libs.log4j.api)
   testImplementation(libs.log4j.core)
   testImplementation(libs.log4j.slf4j)
+
+  testImplementation(libs.kotest.runner.junit5)
+  testImplementation(libs.kotest.assertions.core)
 }
 
 java {

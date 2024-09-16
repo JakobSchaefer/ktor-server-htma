@@ -1,0 +1,14 @@
+{
+  "web/images/test-image.png": {
+    "file": "assets/test-image-abcdef.png",
+    "src": "web/images/test-image.png"
+  },
+  "web/main.js": {
+    "file": "assets/main.js",
+    "name": "main",
+    "src": "web/main.js",
+    "isEntry": true,
+    "css": [],
+    "assets": []
+  }
+}

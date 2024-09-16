@@ -1,0 +1,12 @@
+<!--/*@thymesVar id="name" type="java.lang.String"*/-->
+<!doctype html>
+<html lang="en" th:lang="${#locale}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Simple Test Page</title>
+</head>
+<body>
+    <h1 th:text="#{hello(${name})}">Hello Max Mustermann!</h1>
+</body>
+</html>
