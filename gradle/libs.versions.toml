@@ -1,0 +1,28 @@
+[versions]
+kotest = "5.9.1"
+kotlin = "2.0.20"
+kotlinxSerialization = "1.7.2"
+ktor = "3.0.0-rc-1"
+thymeleaf = "3.1.2.RELEASE"
+slf4j = "2.0.16"
+log4j = "2.24.0"
+
+[libraries]
+kotest-runner-junit5 = { group = "io.kotest", name = "kotest-runner-junit5", version.ref = "kotest" }
+kotest-assertions-core = { group = "io.kotest", name = "kotest-assertions-core", version.ref = "kotest" }
+slf4j = { group = "org.slf4j", name = "slf4j-api", version.ref = "slf4j" }
+log4j-api = { group = "org.apache.logging.log4j", name = "log4j-api", version.ref = "log4j" }
+log4j-core = { group = "org.apache.logging.log4j", name = "log4j-core", version.ref = "log4j" }
+log4j-slf4j = { group = "org.apache.logging.log4j", name = "log4j-slf4j2-impl", version.ref = "log4j" }
+kotlinx-serialization-json = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "kotlinxSerialization" }
+ktor-server-core = { group = "io.ktor", name = "ktor-server-core", version.ref = "ktor" }
+ktor-server-test-host = { group = "io.ktor", name = "ktor-server-test-host", version.ref = "ktor" }
+thymeleaf = { group = "org.thymeleaf", name = "thymeleaf", version.ref = "thymeleaf" }
+
+[plugins]
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+axios = { id = "pl.allegro.tech.build.axion-release", version = "1.18.8" }
+spotless = { id = "com.diffplug.spotless", version = "6.25.0" }
+node = { id = "com.github.node-gradle.node", version = "7.0.2" }
+ktor = { id = "io.ktor.plugin", version.ref = "ktor" }
