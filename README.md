@@ -1,4 +1,4 @@
-# HTMA - A Ktor Server Plugin
+# HTMA - HTML-Driven Fullstack Web Application Framework
 
 HTMA is a new fullstack web application framework.
 - Easy to learn
@@ -25,7 +25,7 @@ fun main() {
 ```
 
 ```html
-<!-- web/hello.html -->
+<!-- File: web/hello.html -->
 <!doctype html>
 <html lang="en">
 <head>
