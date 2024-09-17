@@ -5,6 +5,7 @@ plugins {
 }
 
 group = "de.jakobschaefer"
+
 version = "1.0.0"
 
 repositories {
@@ -24,7 +25,7 @@ gradlePlugin {
       implementationClass = "de.jakobschaefer.htma.gradle.HypertextMarkupApplicationPlugin"
       dependencies {
         implementation(
-          "com.github.node-gradle.node:com.github.node-gradle.node.gradle.plugin:latest.release")
+            "com.github.node-gradle.node:com.github.node-gradle.node.gradle.plugin:latest.release")
 
         implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.7.2")
       }
