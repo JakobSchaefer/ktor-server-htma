@@ -4,6 +4,10 @@ plugins {
   id("de.jakobschaefer.ktor-server-htma") version "1.0.0"
 }
 
+java {
+  toolchain { languageVersion = JavaLanguageVersion.of(21) }
+}
+
 application { mainClass.set("de.jakobschaefer.website.MainKt") }
 
 dependencies {
