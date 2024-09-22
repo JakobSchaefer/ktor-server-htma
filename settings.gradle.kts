@@ -1,5 +1,7 @@
 rootProject.name = "ktor-server-htma"
 
+includeBuild("gradle-plugin")
+
 include("lib")
 
-include("gradle-plugin")
+include("example-site")

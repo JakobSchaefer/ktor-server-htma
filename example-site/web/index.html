@@ -1,0 +1,23 @@
+<!--/*@thymesVar id="vite" type="de.jakobschaefer.htma.vite.Vite"*/-->
+<!--/*@thymesVar id="name" type="java.lang.String"*/-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Example Site</title>
+    <script
+      type="module"
+      data-th-each="js : ${vite.getJs()}"
+      data-th-src="@{${js}}"
+    ></script>
+    <link
+      rel="stylesheet"
+      data-th-each="css : ${vite.getCss()}"
+      data-th-href="@{${css}}"
+    />
+  </head>
+  <body>
+    <h1 class="text-2xl font-bold" data-th-text="|Hello ${name}!|"></h1>
+  </body>
+</html>

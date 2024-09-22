@@ -5,6 +5,8 @@ HTMA is a new fullstack web application framework.
 - Driven by HTML
 - Powered by [Kotlin](https://kotlinlang.org/) & [Ktor](https://ktor.io/)
 
+The framework consists of a ktor plugin and a [gradle plugin](./docs/gradle-plugin).
+
 **Usage:**
 ```kotlin
 fun main() {
