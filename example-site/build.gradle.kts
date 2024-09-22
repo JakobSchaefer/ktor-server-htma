@@ -7,7 +7,7 @@ plugins {
 application { mainClass.set("de.jakobschaefer.website.MainKt") }
 
 dependencies {
-  implementation("de.jakobschaefer:ktor-server-htma:0.1.0-SNAPSHOT.2")
+  implementation(project(":lib"))
   implementation(libs.ktor.server.core)
   implementation(libs.ktor.server.netty)
   testImplementation(libs.ktor.server.test.host)
@@ -22,5 +22,3 @@ dependencies {
 }
 
 tasks.withType<Test>().configureEach { useJUnitPlatform() }
-
-repositories { maven { url = uri("https://maven.pkg.github.com/JakobSchaefer/standard-service") } }
