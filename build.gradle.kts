@@ -32,7 +32,7 @@ allprojects {
 }
 
 spotless {
-  kotlin { ktfmt().configure { target("**/*.kt", "**/*.kts") } }
+  kotlin { ktfmt().configure { target("*/src/**/*.kt", "*/*.kts") } }
 
   format("web") {
     target("*/web/**/*.js", "*/web/**/*.css", "*/web/**/*.html")
