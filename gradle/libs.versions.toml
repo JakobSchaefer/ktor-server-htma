@@ -23,7 +23,7 @@ thymeleaf = { group = "org.thymeleaf", name = "thymeleaf", version.ref = "thymel
 [plugins]
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
 kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
-axios = { id = "pl.allegro.tech.build.axion-release", version = "1.18.8" }
+axios = { id = "pl.allegro.tech.build.axion-release", version = "1.18.9" }
 spotless = { id = "com.diffplug.spotless", version = "6.25.0" }
 node = { id = "com.github.node-gradle.node", version = "7.0.2" }
 ktor = { id = "io.ktor.plugin", version.ref = "ktor" }
