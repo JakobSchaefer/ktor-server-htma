@@ -6,7 +6,7 @@ plugins {
 
 group = "de.jakobschaefer"
 
-version = "1.0.0"
+version = rootProject.version
 
 repositories {
   mavenCentral()

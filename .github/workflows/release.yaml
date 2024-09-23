@@ -5,8 +5,8 @@ on:
     tags:
       - '*'
 jobs:
-  check:
-    name: Check Code
+  release:
+    name: Release
     runs-on: ubuntu-latest
     permissions:
       contents: read
