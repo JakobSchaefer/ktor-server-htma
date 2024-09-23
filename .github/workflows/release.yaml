@@ -1,13 +1,16 @@
-name: Continuous Integration
+name: Release
 run-name: ${{ github.event.head_commit.message }}
 on:
   push:
-    branches:
-      - main
+    tags:
+      - '*'
 jobs:
   check:
     name: Check Code
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
     steps:
       - name: Checkout sources
         uses: actions/checkout@v4
@@ -17,8 +20,8 @@ jobs:
         uses: gradle/actions/setup-gradle@v4
         with:
           gradle-version: "8.10.1"
-      - name: Detect Project Version
-        run: |
-          ./gradlew currentVersion
-      - name: Build with Gradle
-        run: ./gradlew check
+      - name: Publish ktor-app-server
+        run: ./gradlew publish
+        env:
+          GITHUB_ACTOR: ${{ github.actor }}
+          GITHUB_TOKEN: ${{ github.token }}
