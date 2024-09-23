@@ -7,7 +7,7 @@ HTMA is a new fullstack web application framework.
 
 The framework consists of a ktor plugin and a [gradle plugin](./docs/gradle-plugin).
 
-**Usage:**
+**Appetizer:**
 ```kotlin
 fun main() {
   embeddedServer(Netty, port = 8080) {
@@ -47,3 +47,5 @@ fun main() {
 </body>
 </html>
 ```
+
+Take a look into [example-site](/example-site) in order to bootstrap your own project.
