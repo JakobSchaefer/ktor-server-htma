@@ -26,4 +26,4 @@ the famous [gradle-node-plugin](https://github.com/node-gradle/gradle-node-plugi
 and [vite](https://vitejs.dev/).
 You will need a proper `package.json` and `vite.config.js` next to your gradle files.
 
-Use the example-site to bootstrap your own project.
+Use the [example-site](/example-site) to bootstrap your own project.
