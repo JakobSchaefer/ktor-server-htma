@@ -19,6 +19,7 @@ gradlePlugin {
   plugins {
     create("ktor-server-htma") {
       id = "de.jakobschaefer.ktor-server-htma"
+      version = rootProject.version as String
       displayName = "HTMA - Hypertext Markup Application"
       description = "Plugin support for the HTMA Framework"
       tags = listOf("htma", "ktor")
