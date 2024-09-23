@@ -6,7 +6,7 @@ Install this plugin by including it in your plugins section in your `build.gradl
 
 ```kotlin
 plugins {
-  id("de.jakobschaefer.ktor-server-htma") version "1.0.0"
+  id("de.jakobschaefer.ktor-server-htma") version "<currentVersion>"
 }
 ```
 
